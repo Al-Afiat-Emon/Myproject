@@ -30,13 +30,14 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178">
+				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178" action="Student" method="Get">
+					@csrf
 					<span class="login100-form-title">
-						Sign In
+						Log in
 					</span>
 
-					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
-						<input class="input100" type="text" name="username" placeholder="Username">
+					<div class="wrap-input100 validate-input m-b-16" >
+						<input class="input100" type="email" name="email" placeholder="Email">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -51,13 +52,13 @@
 						</span>
 
 						<a href="#" class="txt2">
-							Username / Password?
+							  Password?
 						</a>
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Sign in
+						<button class="login100-form-btn" input type="submit" value="Submit">
+							Log in
 						</button>
 					</div>
 
@@ -66,7 +67,7 @@
 							Don’t have an account?
 						</span>
 
-						<a href="#" class="txt3">
+						<a href="\SignUp" class="txt3" input type="submit" value="Submit">
 							Sign up now
 						</a>
 					</div>
@@ -77,21 +78,21 @@
 	
 	
 <!--===============================================================================================-->
-	<script src="Log In/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!-- <script src="Log In/vendor/jquery/jquery-3.2.1.min.js"></script> -->
 <!--===============================================================================================-->
-	<script src="Log In/vendor/animsition/js/animsition.min.js"></script>
+	<!-- <script src="Log In/vendor/animsition/js/animsition.min.js"></script> -->
 <!--===============================================================================================-->
-	<script src="Log In/vendor/bootstrap/js/popper.js"></script>
-	<script src="Log In/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!-- <script src="Log In/vendor/bootstrap/js/popper.js"></script> -->
+	<!-- <script src="Log In/vendor/bootstrap/js/bootstrap.min.js"></script> -->
 <!--===============================================================================================-->
-	<script src="Log In/vendor/select2/select2.min.js"></script>
+	<!-- <script src="Log In/vendor/select2/select2.min.js"></script> -->
 <!--===============================================================================================-->
-	<script src="Log In/vendor/daterangepicker/moment.min.js"></script>
-	<script src="Log In/vendor/daterangepicker/daterangepicker.js"></script>
+	<!-- <script src="Log In/vendor/daterangepicker/moment.min.js"></script> -->
+	<!-- <script src="Log In/vendor/daterangepicker/daterangepicker.js"></script> -->
 <!--===============================================================================================-->
-	<script src="Log In/vendor/countdowntime/countdowntime.js"></script>
+	<!-- <script src="Log In/vendor/countdowntime/countdowntime.js"></script> -->
 <!--===============================================================================================-->
-	<script src="Log In/js/main.js"></script>
+	<!-- <script src="Log In/js/main.js"></script> -->
 
 </body>
 </html>

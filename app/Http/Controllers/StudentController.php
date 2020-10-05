@@ -13,9 +13,18 @@ class StudentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $req)
     {
-        //
+        $student = Student::where('email',$req->email)->first();
+        if (!$student) {
+            return response()->json(['success'=>false, 'message' => 'Login Fail, please check email id']);
+         }
+
+         if (Hash::check('password', $student->password)) {
+            return response()->json(['success'=>false, 'message' => 'Login Fail, pls check password']);
+         }
+
+         return view ('Landing page',compact('student'));
     }
 
     /**
@@ -48,7 +57,7 @@ class StudentController extends Controller
         ]);
 
         $student->save ();
-        return view ('Welcome Page');
+        return view ('Landing page',compact('student'));
     }
 
     /**
@@ -94,5 +103,11 @@ class StudentController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function profile ($id)
+    {
+        $student=Student::findOrFail($id);
+        return view ('Profile page',compact ('student'));
     }
 }

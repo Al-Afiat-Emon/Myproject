@@ -24,5 +24,6 @@ Route::get ('SignUp/', function (){
 Route::get ('LogIn/', function (){
     return view ('Log In');
 });
+Route::get ('profile/{id}','App\Http\Controllers\StudentController@profile');
 
 Route::resource('Student', 'App\Http\Controllers\StudentController');
