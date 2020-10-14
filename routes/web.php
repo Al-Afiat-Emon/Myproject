@@ -24,6 +24,16 @@ Route::get ('SignUp/', function (){
 Route::get ('LogIn/', function (){
     return view ('Log In');
 });
+Route::get ('about/', function (){
+    return view ('About us');
+});
+
+Route::get ('new/', function (){
+    return view ('Update info');
+});
+
+Route::get ('Landing/{id}','App\Http\Controllers\StudentController@landing');
 Route::get ('profile/{id}','App\Http\Controllers\StudentController@profile');
 
 Route::resource('Student', 'App\Http\Controllers\StudentController');
+

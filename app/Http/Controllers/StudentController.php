@@ -110,4 +110,10 @@ class StudentController extends Controller
         $student=Student::findOrFail($id);
         return view ('Profile page',compact ('student'));
     }
+
+    public function landing ($id)
+    {
+        $student=Student::findOrFail($id);
+        return view ('Landing page',compact ('student'));
+    }
 }
