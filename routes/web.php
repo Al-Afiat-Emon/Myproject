@@ -24,8 +24,13 @@ Route::get ('SignUp/', function (){
 Route::get ('LogIn/', function (){
     return view ('Log In');
 });
+
 Route::get ('about/', function (){
     return view ('About us');
+});
+
+Route::get ('show/', function (){
+    return view ('video');
 });
 
 Route::get ('new/', function (){

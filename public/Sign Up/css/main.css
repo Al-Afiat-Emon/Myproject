@@ -255,16 +255,16 @@ iframe {
 
 .wrap-input100 {
   width: 100%;
-  position: relative;
-  border-bottom: 1px solid #b2b2b2;
+  position: absolute;
+  border-bottom: 1px solid #dbd7d7;
 }
 
 .label-input100 {
-  font-family: Poppins-Regular;
+  font-family: popping-bold;
   font-size: 15px;
   color: #808080;
   line-height: 1.2;
-  text-align: right;
+  text-align: center;
 
   position: absolute;
   top: 14px;
@@ -275,7 +275,7 @@ iframe {
 
 /*---------------------------------------------*/
 .input100 {
-  font-family: Poppins-Regular;
+  font-family: Poppins-regular;
   font-size: 15px;
   color: #555555;
   line-height: 1.2;
@@ -310,7 +310,7 @@ iframe {
   -moz-transition: all 0.6s;
   transition: all 0.6s;
 
-  background: #57b846;
+  background: #2df505;
 }
 
 
